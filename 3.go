@@ -18,8 +18,7 @@ foreach_i:
 				}
 			}
 			// factor is prime
-			factors = factors[0:len(factors) + 1]
-			factors[len(factors) - 1] = i
+			factors = append(factors, i)
 			fmt.Printf("Adding %d to %v\n", i, factors)
 		}
 	}
